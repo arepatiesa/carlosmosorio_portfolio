@@ -1,0 +1,332 @@
+:root{
+    --yellow: #E7BD00;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    background: #161616;
+  }
+  
+  body::-webkit-scrollbar{
+    width: 10px;
+    background: black;
+  }
+  body::-webkit-scrollbar-track{
+    background: #323232;
+  } 
+  body::-webkit-scrollbar-thumb{
+    background: var(--yellow);  
+  }
+  
+  header{
+    background: #323232;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;  
+    z-index: 2;
+  }
+  .navbar-nav{
+    display: flex;
+    align-items:center;
+    height: 3rem;
+  }
+  .nav-item{
+    margin: 0px 10px 0px 10px;
+    transition: 100ms ease;
+  }
+  li, a, .boton{
+    font-family: Rubik;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .boton{
+    background: #E7BD00; 
+    padding: 6px 15px 6px 15px;
+     border-bottom: solid;
+     border-color: #8C7302;
+    border-width: 5px;
+     transition: 100ms ease;
+     margin: 0px 10px 0px 10px;
+  }
+  .boton:active{
+    border-width: 2px; 
+  }
+  .boton a{  
+    font-family: Ubuntu;
+    color: black;
+    transition: 200ms ease;
+  }
+  .boton a:hover{
+    color: white;
+  }
+  .nav-item:hover{
+    border-bottom: solid;
+    border-color: #E7BD00;
+  }
+  
+  
+  #welcome-section{
+  position: relative;
+    background-image: linear-gradient(40deg, #E12002, #3548E8, #E36C02);
+    width: 100%;
+    height: 100vh;
+    background-size: 500%;
+    z-index: 1;
+      animation: banner 80s infinite alternate;
+  }
+  .fotomia{
+    margin: 120px 0px -140px 150px;
+    width: 150px;
+    height: auto;
+    border-radius: 50%;   
+    border-color: black;
+  }
+  .type-text{
+    display: flex;
+    align-items: center;
+    margin: 150px 0px -140px 150px;
+    font-size: 25px;
+    color: white;
+    background: #343434;
+    width: 325px;
+    border: solid 5px #141414;
+    border-radius: 40px;
+    padding: 5px;
+  }
+  .type-text::after{
+    content: "";
+    position: absolute;
+    border-left: 2px solid white;
+    height: 30px;
+    margin-left: 170px;
+    left: 0;
+    width: 155px;
+    background-color: #343434;
+    animation: typing 5s steps(11) infinite;
+  }
+  .myname{
+    display: flex; 
+  font-family: Ubuntu;
+  font-size: 60px; 
+  margin: 150px 0px -50px 150px;
+    color: white;
+  }
+  h2{
+    color:white;
+  }
+  .cap{
+  font-family: Ubuntu;
+  font-size: 30px;
+  margin: 65px 0px -50px 150px;
+    font-style: italic;
+    color: var(--yellow);
+  } 
+  
+  
+  .title{
+   display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    font-family: Ubuntu;
+    font-size: 40px;
+    border-bottom: solid 5px var(--yellow);
+    width: 100%;
+  } 
+  #projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .project-tile{
+    margin-right: 40px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .image{
+    position: relative;
+  }
+  .pj-img {
+    width: 350px;
+    margin: 40px;
+    border: solid 10px #343434;
+    border-radius: 40px;
+    transition: 200ms ease;
+  }
+  .image__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 67.5%;
+    margin: 40px;
+    border: solid 10px #343434;
+    border-radius: 40px;
+    background: rgb(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    transition: 200ms ease; 
+  }
+  .image__overlay:hover{
+    opacity: 1;
+      border-color: var(--yellow);
+    box-shadow: -10px 10px 0 #DADADA;
+  }
+  .overlay-info{
+    display: flex;
+    justify-content: center;
+  }
+  #pj-n:hover{
+    box-shadow: 10px 10px 0 #DADADA;
+  }
+  h3{
+    font-size: 25px;
+    font-family: Ubuntu;
+    color: var(--yellow);
+  }
+  p{
+    font-size: 20px;
+    font-family: Rubik;
+    color: white;
+    width: 500px;
+    text-align: justify;
+  }
+  #pj-bt{
+    transform: scale(1.3);
+    margin: 30px;
+    margin-bottom: 0px;
+  }
+  
+  #logros{
+    height: 700px;
+      margin-left: 50px;
+    margin-right: 50px;
+  }
+  .logros-img{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .idk{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  }
+  .a-img{
+    width: 400px;
+    border: solid 10px #343434;
+    transition: 500ms;
+  }
+  .idk:hover .a-img{
+    border: solid 10px var(--yellow);
+    border-bottom: none;
+  }
+  .img-cap{
+    display: none;
+     text-align: center;
+     color: black;
+     font-size: 20px;
+     font-family: Rubik;
+  }
+  .idk:hover .img-cap{
+        animation: cap 300ms ease-in-out;
+  }
+  .idk:hover .img-cap{
+    display: block;
+    margin-top: -10px;
+    width: 400px;
+    background: #ECEAEA;
+    border: solid 10px var(--yellow);
+    border-top: none;
+    padding-top: 10px;
+  }
+  
+  #contact{
+    background: #323232;
+    height: 500px;
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+  }
+  #ct-cap{
+    margin-top: -20px;
+  }
+  .icons{
+   display: flex;
+   justify-content: center;
+    flex-direction: column;
+  } 
+  .nose{
+     display: flex;
+  }
+  .icon{
+    display: flex; 
+    align-items: center;
+    margin: 20px;
+  }
+  .icon:hover #github{
+    color: #1C1D22;
+  }
+  .icon:hover #gmail{
+    color: #FF4C4C;
+  }
+  .i-p{
+    margin-left: 20px;
+  }
+  svg{
+    width: 60px;
+    color: white;
+    transition: 500ms;
+  }
+  
+  footer{
+    padding: 8px;
+    color: white;
+    font-family: Rubik;
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media (min-width: 1200px){
+    .myname{
+      font-size: 80px;
+    }
+    .cap{
+      font-size: 40px;
+    }
+    .fotomia{
+      width: 190px;
+    }
+  }
+  
+  @media (max-width: 980px){
+  
+  }
+  
+  @keyframes typing{
+    40%,
+    60% {
+      left: calc(90px + 65.5px);   
+    }
+    100%{
+      left: 0;
+    }
+  }
+  
+  
+  
