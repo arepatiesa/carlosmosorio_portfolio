@@ -96,7 +96,7 @@
     font-size: 25px;
     color: white;
     background: #343434;
-    width: 325px;
+    width: 355px;
     border: solid 5px #141414;
     border-radius: 40px;
     padding: 5px;
@@ -108,7 +108,7 @@
     height: 30px;
     margin-left: 170px;
     left: 0;
-    width: 155px;
+    width: 170px;
     background-color: #343434;
     animation: typing 5s steps(11) infinite;
   }
@@ -182,7 +182,7 @@
   }
   .image__overlay:hover{
     opacity: 1;
-      border-color: var(--yellow);
+    border-color: var(--yellow);
     box-shadow: -10px 10px 0 #DADADA;
   }
   .overlay-info{
@@ -210,7 +210,7 @@
     margin-bottom: 0px;
   }
   
-  #logros{
+  #certificates{
     height: 700px;
       margin-left: 50px;
     margin-right: 50px;
@@ -258,10 +258,12 @@
   #contact{
     background: #323232;
     height: 500px;
+    width: 100%;
     display: flex; 
     justify-content: center;
     flex-direction: column;
     align-items: center; 
+    
   }
   #ct-cap{
     margin-top: -20px;
@@ -321,7 +323,7 @@
   @keyframes typing{
     40%,
     60% {
-      left: calc(90px + 65.5px);   
+      left: calc(100px + 70px);   
     }
     100%{
       left: 0;
